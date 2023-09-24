@@ -4,9 +4,23 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="apple-touch-icon" sizes="180x180" href="icons/apple-touch-icon.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32x32.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="icons/favicon-16x16.png" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="icons/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="icons/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="icons/favicon-16x16.png"
+    />
     <link rel="manifest" href="icons/site.webmanifest" />
     <meta name="msapplication-TileColor" content="#da532c" />
     <meta name="theme-color" content="#ffffff" />
@@ -15,32 +29,139 @@
   </head>
 
   <body>
-    <header class="header">
-      <div class="container">
-        <div class="header__inner">
-          <a href="#" class="heder__logo">
-            <img src="img/logo.svg" alt="logo">
-            <span>comu</span>
-          </a>
-          <nav class="header__menu"></nav>
-          <a class="header__btn"></a>
+    <div class="wrapper">
+      <header class="header">
+        <div class="container">
+          <div class="header__inner small-inner">
+            <a href="#" class="header__logo logo">
+              <img src="img/logo.svg" alt="logo" />
+              <span>comu</span>
+            </a>
+            <nav class="header__menu"></nav>
+            <a class="header__btn btn" hreg="#">Get Started</a>
+          </div>
         </div>
-      </div>
-    </header>
-    <!-- <picture class="picture object-fit-cover">
-    <source srcset="img/small2.webp, img/small2@2x.webp 2x" type="image/webp">
-    <img src="img/small2.png" srcset="img/small2.png, img/small2@2x.png 2x" alt="СЛЕСАРНЫЕ РАБОТЫ">
-  </picture> -->
-    <!-- <picture class="picture object-fit-cover">
-    <source media="(min-width: 577px)" srcset="img/promo-bg.webp, img/promo-bg@2x.webp 2x" type="image/webp">
-    <source media="(max-width: 576px)" srcset="img/promo-bg-576.webp, img/promo-bg-576@2x.webp 2x" type="image/webp">
-    <img src="img/promo-bg.png" srcset="img/promo-bg.png, img/promo-bg@2x.png 2x" alt="CARON MOTORS">
-  </picture> -->
-    <main>
-      <section class="banner"></section>
-    </main>
+      </header>
+      <!-- <picture class="picture object-fit-cover">
+      <source srcset="img/small2.webp, img/small2@2x.webp 2x" type="image/webp">
+      <img src="img/small2.png" srcset="img/small2.png, img/small2@2x.png 2x" alt="СЛЕСАРНЫЕ РАБОТЫ">
+    </picture> -->
+      <!-- <picture class="picture object-fit-cover">
+      <source media="(min-width: 577px)" srcset="img/promo-bg.webp, img/promo-bg@2x.webp 2x" type="image/webp">
+      <source media="(max-width: 576px)" srcset="img/promo-bg-576.webp, img/promo-bg-576@2x.webp 2x" type="image/webp">
+      <img src="img/promo-bg.png" srcset="img/promo-bg.png, img/promo-bg@2x.png 2x" alt="CARON MOTORS">
+    </picture> -->
+      <main>
+        <section class="banner fluid">
+          <div class="container">
+            <div class="banner__inner">
+              <div class="banner__content">
+                <h1 class="banner__title section-title">
+                  Share text, voice, photos, videos and GIFs files for free
+                </h1>
+                <p class="banner__subtitle">
+                  Feugiat primis a ligula undo auctor mauris auctor laoreet and
+                  pretium augue an egestas cubilia
+                </p>
+              </div>
+              <div class="banner__img">
+                <picture class="picture object-fit-cover">
+                  <source
+                    srcset="img/banner.webp, img/banner@2x.webp 2x"
+                    type="image/webp"
+                  />
+                  <img
+                    src="img/small2.png"
+                    srcset="img/banner.png, img/banner@2x.png 2x"
+                    alt="User under tree"
+                  />
+                </picture>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
 
-    <footer class="footer"></footer>
+      <footer class="footer">
+        <div class="footer__inner">
+          <div class="footer__high">
+            <div class="container">
+              <div class="footer__high-inner small-inner">
+                <div class="footer__col">
+                  <a href="#" class="footer__logo logo">
+                    <img src="img/logo.svg" alt="logo" />
+                    <span>comu</span>
+                  </a>
+                  <p class="footer__desc">
+                    Aliquam nullam tempor sapien donec and gravida congue an
+                    ipsum porta justo velna auctor magna and laoreet augue an
+                    auctor gravida donec
+                  </p>
+                  <div class="footer__app">
+                    <a href=""><img src="" alt="" /></a>
+                    <a href=""><img src="" alt="" /></a>
+                  </div>
+                </div>
+                <div class="footer__col">
+                  <nav class="footer__menu">
+                    <ul class="footer__menu-list">
+                      <li class="footer__menu-item title-item">
+                        <a href="#" class="footer__menu-link">Company</a>
+                      </li>
+
+                      <li class="footer__menu-item title-item">
+                        <a href="#" class="footer__menu-link">Discover</a>
+                      </li>
+
+                      <li class="footer__menu-item title-item">
+                        <a href="#" class="footer__menu-link">Legal</a>
+                      </li>
+
+                      <li class="footer__menu-item title-item">
+                        <a href="#" class="footer__menu-link">Support</a>
+                      </li>
+                    </ul>
+                  </nav>
+                  <form class="footer__form form">
+                    <input
+                      class="footer__form-input"
+                      type="email"
+                      placeholder="Your email here..."
+                    />
+                    <button class="footer__form-button" type="submit">
+                      subscribe
+                    </button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="footer__low fluid">
+            <div class="container">
+              <div class="footer__low-inner small-inner">
+                <p class="copy">© 2010 - 2021 OLMO. All Rights Reserved</p>
+                <div class="footer__social">
+                  <a href=""><img src="img/facebook.svg" alt="facebook" /></a>
+                  <a href=""><img src="img/instagram.svg" alt="instagram" /></a>
+                  <a href=""><img src="img/twitter.svg" alt="twitter" /></a>
+                  <a href=""><img src="img/linkedin.svg" alt="linkedIn" /></a>
+                  <a href=""><img src="img/youtube.svg" alt="youtube" /></a>
+                  <a href=""><img src="img/pinterest.svg" alt="pinterest" /></a>
+                </div>
+                <div class="footer__contacts">
+                  <a class="footer__email" href="mailto:hello@yourapp.com"
+                    >Hello@yourapp.com</a
+                  >
+                  <a class="footer__phone" href="tel:+0000000000"
+                    >+000 000 00 00</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
 
     <script src="js/main.min.js"></script>
   </body>

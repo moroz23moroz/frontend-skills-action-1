@@ -6,10 +6,7 @@
 @import 'blocks/banner'
 @import 'blocks/footer'
 
-
-
-
-body 
+body
     margin: 0
     display: flex
     flex-direction: column
@@ -25,23 +22,19 @@ body
     min-height: 100vh
     -webkit-font-smoothing: antialiased
     -moz-osx-font-smoothing: grayscale
-    &.locked 
+    &.locked
         overflow: hidden
-    @include sm 
+    @include sm
         font-size: 16px
-    
 
-
-* 
+*
     box-sizing: border-box
     margin: 0
 
-
-html 
+html
     scroll-behavior: smooth
 
-
-header 
+header
     padding: 0
 
 button
@@ -49,12 +42,12 @@ button
     background-color: transparent
     border: none
 
-h1, h2, h3, h4 
+h1, h2, h3, h4
     margin: 0
     font-weight: normal
 
 img
-    width: auto 
+    width: auto
     max-width: 100%
     height: auto
 
@@ -75,15 +68,63 @@ li
 
 a
     text-decoration: none
-    
-.container 
+    color: inherit
+    cursor: pointer
+
+.container
     max-width: 1253px
     margin: 0 auto
     padding: 0 20px
-    @media(max-width: 576px) 
+    @media(max-width: 576px)
         padding: 0 16px
 
-   
+.fluid
+    max-width: 1920px
+    margin-right: auto
+    margin-left: auto
+    margin-top: 0
+
+.wrapper
+    display: flex
+    flex-direction: column
+    min-height: 100%
+
+.main
+    flex: 1 0 auto
+
+.footer
+    flex: 0 0 auto
+
+    &__email
+        position: relative
+
+    &__email::before
+        position: absolute
+        content: ''
+        background-image: url('../img/mail.svg')
+        background-repeat: no-repeat
+        background-size: cover
+        left: 0
+        bottom: 0
+        width: 18px
+        height: 18px
+        transform: translateY(-5%)
+
+    &__phone
+        position: relative
+
+    &__phone::before
+        position: absolute
+        content: ''
+        background-image: url('../img/phone.svg')
+        background-repeat: no-repeat
+        background-size: cover
+        left: 0
+        bottom: 0
+        width: 18px
+        height: 18px
+        transform: translateY(-5%)
+
 .section-title
     font-family: $poppins-bold
     font-size: 42px
@@ -92,16 +133,38 @@ a
         font-size: 40px
     @include xxs
         font-size: 28px
-    
 
+.small-inner
+    margin: 0 118px
 
+.logo
+    display: flex
+    align-items: center
+    gap: 4px
 
+.logo span
+    font-family: $istok-bold
+    text-transform: uppercase
+    font-size: 27.696px
+    color: $logo-color
 
+.logo img
+    width: 27px
+    height: 27px
 
+.btn
+    font-family: $poppins-bold
+    color: $title-color
+    border-radius: 5px
+    border: 3px solid $btn-color
 
+.form
+    display: flex
+    background: white
 
+.form input
+    border: solid $btn-color
 
-
-
-
-
+.form button
+    color: white
+    background: $btn-color
