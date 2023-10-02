@@ -5,6 +5,60 @@
     background: linear-gradient(178deg, #FFFBF0 4.22%, #F7E6CC 98.53%)
     filter: drop-shadow(0px 5px 26px #DD8762)
     border-radius: 0 0 600px 600px / 0 0 70px 70px
+
     &__inner
         padding-top: 222px
         display: flex
+        justify-content: space-between
+
+    &__content
+        width: 449px
+
+    &__title
+        color: $bright-color
+
+    &__links
+        display: flex
+        gap: 10px
+        margin-bottom: 25px
+
+    &__links-btn
+        background-color: $bright-color
+        color: #F3FCFF
+        padding: 10px 25px
+
+    &__video
+        color: $bright-color
+        padding-left: 27px
+
+    &__special
+        display: flex
+        gap: 6px
+        font-size: 12.46px
+        color: $bright-color
+        font-family: $poppins-bold
+        p
+            height: 14px
+        p:nth-child(2)
+            padding-left: 6px
+            border-left: 2px solid $btn-color
+
+    &__img
+        height: 474px
+        img
+            width: 100%
+            height: 100%
+
+    &__bg
+        position: absolute
+        top: 0
+        left: 0
+        width: 100%
+        height: 100%
+        z-index: -2
+        overflow: hidden
+        img
+            object-position: center
+            object-fit: contain
+            width: 100%
+            height: 100%

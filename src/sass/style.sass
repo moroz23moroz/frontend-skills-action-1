@@ -14,7 +14,8 @@ body
     font-family: $poppins
     color: $main-color
     font-size: 16.67px
-    line-height: 148.2%
+    line-height: 146.687%
+    letter-spacing: 0.5px
     width: 100%
     height: 100%
     margin: 0
@@ -41,6 +42,7 @@ button
     padding: 0
     background-color: transparent
     border: none
+    cursor: pointer
 
 h1, h2, h3, h4
     margin: 0
@@ -72,7 +74,7 @@ a
     cursor: pointer
 
 .container
-    max-width: 1253px
+    max-width: 1254px
     margin: 0 auto
     padding: 0 20px
     @media(max-width: 576px)
@@ -129,10 +131,20 @@ a
     font-family: $poppins-bold
     font-size: 42px
     line-height: 126%
+    width: 450px
+    margin-bottom: 17px
     @include sm
         font-size: 40px
     @include xxs
         font-size: 28px
+
+.title-item
+    font-family: $poppins-bold
+    color: $title-color
+    margin-bottom: 7px
+
+.section-subtitle
+    margin-bottom: 25px
 
 .small-inner
     margin: 0 118px
@@ -141,30 +153,30 @@ a
     display: flex
     align-items: center
     gap: 4px
+    span
+        font-family: $istok-bold
+        text-transform: uppercase
+        font-size: 27.696px
+        color: $logo-color
+    img
+        width: 27px
+        height: 27px
 
-.logo span
-    font-family: $istok-bold
-    text-transform: uppercase
-    font-size: 27.696px
-    color: $logo-color
-
-.logo img
-    width: 27px
-    height: 27px
-
-.btn
+.btn-main
     font-family: $poppins-bold
     color: $title-color
     border-radius: 5px
     border: 3px solid $btn-color
 
+.btn
+    font-family: $poppins-bold
+    border-radius: 6px
+
 .form
     display: flex
     background: white
-
-.form input
-    border: solid $btn-color
-
-.form button
-    color: white
-    background: $btn-color
+    input
+        border: solid $btn-color
+    button
+        color: white
+        background: $btn-color
